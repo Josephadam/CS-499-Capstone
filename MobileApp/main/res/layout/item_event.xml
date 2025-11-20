@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="#121212"
+    android:padding="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+
+        <!-- Left Circle Toggle -->
+        <ImageView
+            android:id="@+id/imageCheckCircle"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_circle_outline"
+            android:contentDescription="Mark as done"
+            android:tint="@color/blue_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Event Title -->
+        <TextView
+            android:id="@+id/textEventTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Meeting with Bob"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/imageCheckCircle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="12dp"/>
+
+        <!-- Event Date -->
+        <TextView
+            android:id="@+id/textEventDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Apr 7, 2025"
+            android:textColor="@color/light_gray"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/textEventTitle"
+            app:layout_constraintStart_toStartOf="@id/textEventTitle"
+            app:layout_constraintEnd_toEndOf="@id/textEventTitle"
+            android:layout_marginTop="4dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

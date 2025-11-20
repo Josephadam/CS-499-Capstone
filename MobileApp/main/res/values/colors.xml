@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="on_dark_text">#EAECEF</color>
+    <color name="hint_on_dark">#99A0A6</color>
+    <color name="dark_background">#0E0F12</color>
+    <color name="blue_button">#3763FF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dark_input_panel">#14161A</color>
+    <color name="dark_input">#15171C</color>
+    <color name="on_dark_muted">#A2A8B0</color>
+    <color name="row_bg">#141922</color>        <!-- card fill -->
+    <color name="row_stroke">#203040</color>
+    <color name="light_gray">#A0A0A0</color>
+</resources>

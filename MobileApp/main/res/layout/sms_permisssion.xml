@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textSmsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sms_notifications1"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_marginBottom="12dp" />
+
+
+        <!-- Current permission state (you'll set this in code) -->
+        <TextView
+            android:id="@+id/textPermissionStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/permission_unknown"
+            tools:text="Permission: DENIED"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Button 1: Request SMS permission -->
+        <Button
+            android:id="@+id/buttonRequestSmsPermission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/grant_sms_permission"
+            android:textAllCaps="false"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Phone number input (always visible; you can disable in code if denied) -->
+        <EditText
+            android:id="@+id/editPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:autofillHints="phoneNumber"
+            android:digits="0123456789+() -"
+            android:layout_marginBottom="12dp" />
+
+
+
+        <!-- Button 2: Send SMS (disabled until permission is granted) -->
+        <Button
+            android:id="@+id/buttonSendTestSms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send_test_sms"
+            android:textAllCaps="false"
+            android:enabled="false"
+            tools:enabled="true" />
+
+        <!-- Denied state reminder -->
+        <TextView
+            android:id="@+id/textDeniedNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/if_you_deny_sms_access_the_app_will_still_work_but_won_t_send_text_notifications"
+            android:textSize="13sp"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+</ScrollView>

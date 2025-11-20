@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Declare telephony capability -->
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+
+    <!-- Dangerous permission: must also be requested at runtime in code -->
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Dumke_Joseph_Option_2">
+
+        <activity
+            android:name=".EVENTS.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Events list -->
+        <activity
+            android:name=".EVENTS.EventsActivity"
+            android:exported="false" />
+
+        <!-- Add-event screen -->
+        <activity
+            android:name=".EVENTS.NewEventActivity"
+            android:exported="false" />
+
+        <!-- NEW: SMS settings screen -->
+        <activity
+            android:name=".SMS.SmsSettingsActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

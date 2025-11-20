@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Dumke_Joseph_Option_2</string>
+    <string name="welcome">Welcome</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="create_account">Create Account</string>
+    <string name="events">Events</string>
+    <string name="add">Add</string>
+    <string name="events1">Events</string>
+    <string name="add1">Add</string>
+    <string name="event_title">Event title</string>
+    <string name="apr_9_2025_10_00_am">Apr 9, 2025 • 10:00 AM</string>
+    <string name="new_event">New Event</string>
+    <string name="title">Title</string>
+    <string name="pick_date">Pick date</string>
+    <string name="pick_time">Pick time</string>
+    <string name="notes">Notes</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="remind_me_on_the_day">Remind me on the day</string>
+    <string name="sms_notifications">SMS Notifications</string>
+    <string name="sms_notifications1">SMS Notifications</string>
+    <string name="to_send_you_text_updates_low_inventory_upcoming_events_or_goals_we_need_sms_permission">To send you text updates (low inventory, upcoming events, or goals), we need SMS permission.</string>
+    <string name="permission_unknown">Permission: Unknown</string>
+    <string name="grant_sms_permission">Grant SMS Permission</string>
+    <string name="phone_number">Phone number</string>
+    <string name="preview_message">Preview message:</string>
+    <string name="send_test_sms">Send Test SMS</string>
+    <string name="if_you_deny_sms_access_the_app_will_still_work_but_won_t_send_text_notifications">If you deny SMS access, the app will still work but won’t send text notifications.</string>
+    <string name="delete_event">Delete event</string>
+    <string name="sms">SMS</string>
+</resources>
